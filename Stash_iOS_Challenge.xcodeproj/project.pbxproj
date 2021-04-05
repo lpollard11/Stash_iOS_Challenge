@@ -17,6 +17,14 @@
 		594742E3261BC5B200E88576 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742E2261BC5B200E88576 /* Achievement.swift */; };
 		594742F3261BC7D000E88576 /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742F2261BC7D000E88576 /* Overview.swift */; };
 		594742FB261BC82700E88576 /* AchievementList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742FA261BC82700E88576 /* AchievementList.swift */; };
+		59474308261BC99800E88576 /* ModelProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474307261BC99800E88576 /* ModelProviding.swift */; };
+		59474310261BC9A800E88576 /* ModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947430F261BC9A800E88576 /* ModelProvider.swift */; };
+		59474316261BC9F200E88576 /* HTTPProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474315261BC9F200E88576 /* HTTPProviding.swift */; };
+		5947432A261BCA4300E88576 /* RestEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474329261BCA4300E88576 /* RestEndpoint.swift */; };
+		5947432F261BCA6700E88576 /* AchievementsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947432E261BCA6700E88576 /* AchievementsEndpoint.swift */; };
+		59474334261BCA9200E88576 /* HTTPProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474333261BCA9200E88576 /* HTTPProvider.swift */; };
+		59474340261BCBF100E88576 /* NetworkRequesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947433F261BCBF100E88576 /* NetworkRequesting.swift */; };
+		59474348261BCC0B00E88576 /* NetworkRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474347261BCC0B00E88576 /* NetworkRequester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		594742E2261BC5B200E88576 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		594742F2261BC7D000E88576 /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
 		594742FA261BC82700E88576 /* AchievementList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementList.swift; sourceTree = "<group>"; };
+		59474307261BC99800E88576 /* ModelProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProviding.swift; sourceTree = "<group>"; };
+		5947430F261BC9A800E88576 /* ModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProvider.swift; sourceTree = "<group>"; };
+		59474315261BC9F200E88576 /* HTTPProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPProviding.swift; sourceTree = "<group>"; };
+		59474329261BCA4300E88576 /* RestEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestEndpoint.swift; sourceTree = "<group>"; };
+		5947432E261BCA6700E88576 /* AchievementsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsEndpoint.swift; sourceTree = "<group>"; };
+		59474333261BCA9200E88576 /* HTTPProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPProvider.swift; sourceTree = "<group>"; };
+		5947433F261BCBF100E88576 /* NetworkRequesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequesting.swift; sourceTree = "<group>"; };
+		59474347261BCC0B00E88576 /* NetworkRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +152,10 @@
 		594742DA261BC52400E88576 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5947431D261BCA1500E88576 /* Endpoints */,
+				59474314261BC9E900E88576 /* HTTPProviding */,
+				59474306261BC98E00E88576 /* ModelProviding */,
+				5947433E261BCBBF00E88576 /* NetworkRequesting */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -156,6 +176,42 @@
 				594742F2261BC7D000E88576 /* Overview.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		59474306261BC98E00E88576 /* ModelProviding */ = {
+			isa = PBXGroup;
+			children = (
+				5947430F261BC9A800E88576 /* ModelProvider.swift */,
+				59474307261BC99800E88576 /* ModelProviding.swift */,
+			);
+			path = ModelProviding;
+			sourceTree = "<group>";
+		};
+		59474314261BC9E900E88576 /* HTTPProviding */ = {
+			isa = PBXGroup;
+			children = (
+				59474333261BCA9200E88576 /* HTTPProvider.swift */,
+				59474315261BC9F200E88576 /* HTTPProviding.swift */,
+			);
+			path = HTTPProviding;
+			sourceTree = "<group>";
+		};
+		5947431D261BCA1500E88576 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				5947432E261BCA6700E88576 /* AchievementsEndpoint.swift */,
+				59474329261BCA4300E88576 /* RestEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		5947433E261BCBBF00E88576 /* NetworkRequesting */ = {
+			isa = PBXGroup;
+			children = (
+				59474347261BCC0B00E88576 /* NetworkRequester.swift */,
+				5947433F261BCBF100E88576 /* NetworkRequesting.swift */,
+			);
+			path = NetworkRequesting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,9 +346,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				594742F3261BC7D000E88576 /* Overview.swift in Sources */,
+				59474308261BC99800E88576 /* ModelProviding.swift in Sources */,
+				59474334261BCA9200E88576 /* HTTPProvider.swift in Sources */,
+				59474310261BC9A800E88576 /* ModelProvider.swift in Sources */,
+				59474316261BC9F200E88576 /* HTTPProviding.swift in Sources */,
+				5947432A261BCA4300E88576 /* RestEndpoint.swift in Sources */,
+				5947432F261BCA6700E88576 /* AchievementsEndpoint.swift in Sources */,
 				594742FB261BC82700E88576 /* AchievementList.swift in Sources */,
 				594742A2261BC2C400E88576 /* AppDelegate.swift in Sources */,
 				594742E3261BC5B200E88576 /* Achievement.swift in Sources */,
+				59474340261BCBF100E88576 /* NetworkRequesting.swift in Sources */,
+				59474348261BCC0B00E88576 /* NetworkRequester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

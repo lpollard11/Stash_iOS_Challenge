@@ -13,6 +13,10 @@
 		594742AE261BC2C500E88576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594742AC261BC2C500E88576 /* LaunchScreen.storyboard */; };
 		594742B9261BC2C500E88576 /* Stash_iOS_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742B8261BC2C500E88576 /* Stash_iOS_ChallengeTests.swift */; };
 		594742C4261BC2C500E88576 /* Stash_iOS_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742C3261BC2C500E88576 /* Stash_iOS_ChallengeUITests.swift */; };
+		594742DD261BC55500E88576 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 594742DC261BC55500E88576 /* achievements.json */; };
+		594742E3261BC5B200E88576 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742E2261BC5B200E88576 /* Achievement.swift */; };
+		594742F3261BC7D000E88576 /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742F2261BC7D000E88576 /* Overview.swift */; };
+		594742FB261BC82700E88576 /* AchievementList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742FA261BC82700E88576 /* AchievementList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		594742BF261BC2C500E88576 /* Stash_iOS_ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stash_iOS_ChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		594742C3261BC2C500E88576 /* Stash_iOS_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stash_iOS_ChallengeUITests.swift; sourceTree = "<group>"; };
 		594742C5261BC2C500E88576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		594742DC261BC55500E88576 /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		594742E2261BC5B200E88576 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		594742F2261BC7D000E88576 /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
+		594742FA261BC82700E88576 /* AchievementList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +103,14 @@
 		594742A0261BC2C400E88576 /* Stash_iOS_Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				594742AF261BC2C500E88576 /* Info.plist */,
 				594742A1261BC2C400E88576 /* AppDelegate.swift */,
-				594742A7261BC2C400E88576 /* Main.storyboard */,
 				594742AA261BC2C500E88576 /* Assets.xcassets */,
 				594742AC261BC2C500E88576 /* LaunchScreen.storyboard */,
-				594742AF261BC2C500E88576 /* Info.plist */,
+				594742A7261BC2C400E88576 /* Main.storyboard */,
+				594742E1261BC58100E88576 /* Models */,
+				594742DB261BC53700E88576 /* Resources */,
+				594742DA261BC52400E88576 /* Services */,
 			);
 			path = Stash_iOS_Challenge;
 			sourceTree = "<group>";
@@ -120,6 +131,31 @@
 				594742C5261BC2C500E88576 /* Info.plist */,
 			);
 			path = Stash_iOS_ChallengeUITests;
+			sourceTree = "<group>";
+		};
+		594742DA261BC52400E88576 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		594742DB261BC53700E88576 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				594742DC261BC55500E88576 /* achievements.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		594742E1261BC58100E88576 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				594742E2261BC5B200E88576 /* Achievement.swift */,
+				594742FA261BC82700E88576 /* AchievementList.swift */,
+				594742F2261BC7D000E88576 /* Overview.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				594742AE261BC2C500E88576 /* LaunchScreen.storyboard in Resources */,
+				594742DD261BC55500E88576 /* achievements.json in Resources */,
 				594742AB261BC2C500E88576 /* Assets.xcassets in Resources */,
 				594742A9261BC2C400E88576 /* Main.storyboard in Resources */,
 			);
@@ -252,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				594742F3261BC7D000E88576 /* Overview.swift in Sources */,
+				594742FB261BC82700E88576 /* AchievementList.swift in Sources */,
 				594742A2261BC2C400E88576 /* AppDelegate.swift in Sources */,
+				594742E3261BC5B200E88576 /* Achievement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

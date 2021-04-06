@@ -25,6 +25,13 @@
 		59474334261BCA9200E88576 /* HTTPProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474333261BCA9200E88576 /* HTTPProvider.swift */; };
 		59474340261BCBF100E88576 /* NetworkRequesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947433F261BCBF100E88576 /* NetworkRequesting.swift */; };
 		59474348261BCC0B00E88576 /* NetworkRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474347261BCC0B00E88576 /* NetworkRequester.swift */; };
+		59474351261BCED300E88576 /* AchievementsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474350261BCED300E88576 /* AchievementsService.swift */; };
+		59474356261BCF3000E88576 /* AchievementsServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474355261BCF3000E88576 /* AchievementsServiceAPI.swift */; };
+		59474360261BCFBF00E88576 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947435F261BCFBF00E88576 /* AchievementsInteractor.swift */; };
+		59474365261BD01400E88576 /* AchievementsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474364261BD01400E88576 /* AchievementsProtocols.swift */; };
+		5947436A261BD7A400E88576 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474369261BD7A400E88576 /* AchievementsPresenter.swift */; };
+		5947436F261BF05300E88576 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947436E261BF05300E88576 /* AchievementsViewController.swift */; };
+		59474374261BF19D00E88576 /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474373261BF19D00E88576 /* AchievementsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,13 @@
 		59474333261BCA9200E88576 /* HTTPProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPProvider.swift; sourceTree = "<group>"; };
 		5947433F261BCBF100E88576 /* NetworkRequesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequesting.swift; sourceTree = "<group>"; };
 		59474347261BCC0B00E88576 /* NetworkRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequester.swift; sourceTree = "<group>"; };
+		59474350261BCED300E88576 /* AchievementsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsService.swift; sourceTree = "<group>"; };
+		59474355261BCF3000E88576 /* AchievementsServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsServiceAPI.swift; sourceTree = "<group>"; };
+		5947435F261BCFBF00E88576 /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
+		59474364261BD01400E88576 /* AchievementsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsProtocols.swift; sourceTree = "<group>"; };
+		59474369261BD7A400E88576 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
+		5947436E261BF05300E88576 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		59474373261BF19D00E88576 /* AchievementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +133,7 @@
 		594742A0261BC2C400E88576 /* Stash_iOS_Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				5947435D261BCF8A00E88576 /* Features */,
 				594742AF261BC2C500E88576 /* Info.plist */,
 				594742A1261BC2C400E88576 /* AppDelegate.swift */,
 				594742AA261BC2C500E88576 /* Assets.xcassets */,
@@ -152,6 +167,7 @@
 		594742DA261BC52400E88576 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5947434F261BCEBC00E88576 /* Achievements */,
 				5947431D261BCA1500E88576 /* Endpoints */,
 				59474314261BC9E900E88576 /* HTTPProviding */,
 				59474306261BC98E00E88576 /* ModelProviding */,
@@ -212,6 +228,35 @@
 				5947433F261BCBF100E88576 /* NetworkRequesting.swift */,
 			);
 			path = NetworkRequesting;
+			sourceTree = "<group>";
+		};
+		5947434F261BCEBC00E88576 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				59474350261BCED300E88576 /* AchievementsService.swift */,
+				59474355261BCF3000E88576 /* AchievementsServiceAPI.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		5947435D261BCF8A00E88576 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5947435E261BCFA400E88576 /* Achievements */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5947435E261BCFA400E88576 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				5947435F261BCFBF00E88576 /* AchievementsInteractor.swift */,
+				59474369261BD7A400E88576 /* AchievementsPresenter.swift */,
+				59474364261BD01400E88576 /* AchievementsProtocols.swift */,
+				59474373261BF19D00E88576 /* AchievementsRouter.swift */,
+				5947436E261BF05300E88576 /* AchievementsViewController.swift */,
+			);
+			path = Achievements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,10 +390,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5947436F261BF05300E88576 /* AchievementsViewController.swift in Sources */,
 				594742F3261BC7D000E88576 /* Overview.swift in Sources */,
+				59474351261BCED300E88576 /* AchievementsService.swift in Sources */,
+				59474374261BF19D00E88576 /* AchievementsRouter.swift in Sources */,
+				59474356261BCF3000E88576 /* AchievementsServiceAPI.swift in Sources */,
+				5947436A261BD7A400E88576 /* AchievementsPresenter.swift in Sources */,
 				59474308261BC99800E88576 /* ModelProviding.swift in Sources */,
 				59474334261BCA9200E88576 /* HTTPProvider.swift in Sources */,
 				59474310261BC9A800E88576 /* ModelProvider.swift in Sources */,
+				59474360261BCFBF00E88576 /* AchievementsInteractor.swift in Sources */,
+				59474365261BD01400E88576 /* AchievementsProtocols.swift in Sources */,
 				59474316261BC9F200E88576 /* HTTPProviding.swift in Sources */,
 				5947432A261BCA4300E88576 /* RestEndpoint.swift in Sources */,
 				5947432F261BCA6700E88576 /* AchievementsEndpoint.swift in Sources */,

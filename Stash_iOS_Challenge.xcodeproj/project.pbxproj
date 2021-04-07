@@ -10,7 +10,6 @@
 		594742A2261BC2C400E88576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742A1261BC2C400E88576 /* AppDelegate.swift */; };
 		594742AB261BC2C500E88576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594742AA261BC2C500E88576 /* Assets.xcassets */; };
 		594742AE261BC2C500E88576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594742AC261BC2C500E88576 /* LaunchScreen.storyboard */; };
-		594742B9261BC2C500E88576 /* Stash_iOS_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742B8261BC2C500E88576 /* Stash_iOS_ChallengeTests.swift */; };
 		594742C4261BC2C500E88576 /* Stash_iOS_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742C3261BC2C500E88576 /* Stash_iOS_ChallengeUITests.swift */; };
 		594742DD261BC55500E88576 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 594742DC261BC55500E88576 /* achievements.json */; };
 		594742E3261BC5B200E88576 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742E2261BC5B200E88576 /* Achievement.swift */; };
@@ -35,6 +34,10 @@
 		59474391261E11FC00E88576 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474390261E11FC00E88576 /* AchievementCell.swift */; };
 		59474396261E541800E88576 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474395261E541800E88576 /* LevelView.swift */; };
 		5947439B261E543200E88576 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947439A261E543200E88576 /* ProgressBarView.swift */; };
+		594743A4261E5A7500E88576 /* HTTPProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743A3261E5A7500E88576 /* HTTPProviderMock.swift */; };
+		594743A9261E5AE400E88576 /* ModelProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743A8261E5AE400E88576 /* ModelProviderMock.swift */; };
+		594743AE261E5B5000E88576 /* RestEndpointMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743AD261E5B5000E88576 /* RestEndpointMock.swift */; };
+		594743B3261E5C1D00E88576 /* AchievementsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743B2261E5C1D00E88576 /* AchievementsServiceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +64,6 @@
 		594742AD261BC2C500E88576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		594742AF261BC2C500E88576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		594742B4261BC2C500E88576 /* Stash_iOS_ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stash_iOS_ChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		594742B8261BC2C500E88576 /* Stash_iOS_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stash_iOS_ChallengeTests.swift; sourceTree = "<group>"; };
 		594742BA261BC2C500E88576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		594742BF261BC2C500E88576 /* Stash_iOS_ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stash_iOS_ChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		594742C3261BC2C500E88576 /* Stash_iOS_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stash_iOS_ChallengeUITests.swift; sourceTree = "<group>"; };
@@ -89,6 +91,10 @@
 		59474390261E11FC00E88576 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
 		59474395261E541800E88576 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
 		5947439A261E543200E88576 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		594743A3261E5A7500E88576 /* HTTPProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPProviderMock.swift; sourceTree = "<group>"; };
+		594743A8261E5AE400E88576 /* ModelProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProviderMock.swift; sourceTree = "<group>"; };
+		594743AD261E5B5000E88576 /* RestEndpointMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestEndpointMock.swift; sourceTree = "<group>"; };
+		594743B2261E5C1D00E88576 /* AchievementsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsServiceMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +161,7 @@
 		594742B7261BC2C500E88576 /* Stash_iOS_ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				594742B8261BC2C500E88576 /* Stash_iOS_ChallengeTests.swift */,
+				5947439F261E5A6200E88576 /* Mocks */,
 				594742BA261BC2C500E88576 /* Info.plist */,
 			);
 			path = Stash_iOS_ChallengeTests;
@@ -284,6 +290,17 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		5947439F261E5A6200E88576 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				594743A3261E5A7500E88576 /* HTTPProviderMock.swift */,
+				594743A8261E5AE400E88576 /* ModelProviderMock.swift */,
+				594743AD261E5B5000E88576 /* RestEndpointMock.swift */,
+				594743B2261E5C1D00E88576 /* AchievementsServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,6 +371,7 @@
 					};
 					594742B3261BC2C500E88576 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 5947429D261BC2C400E88576;
 					};
 					594742BE261BC2C500E88576 = {
@@ -444,7 +462,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				594742B9261BC2C500E88576 /* Stash_iOS_ChallengeTests.swift in Sources */,
+				594743A9261E5AE400E88576 /* ModelProviderMock.swift in Sources */,
+				594743AE261E5B5000E88576 /* RestEndpointMock.swift in Sources */,
+				594743A4261E5A7500E88576 /* HTTPProviderMock.swift in Sources */,
+				594743B3261E5C1D00E88576 /* AchievementsServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +663,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q89MCEGMES;
 				INFOPLIST_FILE = Stash_iOS_ChallengeTests/Info.plist;
@@ -653,6 +675,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lee.pollard.Stash-iOS-ChallengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stash_iOS_Challenge.app/Stash_iOS_Challenge";
@@ -664,6 +687,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q89MCEGMES;
 				INFOPLIST_FILE = Stash_iOS_ChallengeTests/Info.plist;

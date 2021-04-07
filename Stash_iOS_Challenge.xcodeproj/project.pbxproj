@@ -38,6 +38,7 @@
 		594743A9261E5AE400E88576 /* ModelProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743A8261E5AE400E88576 /* ModelProviderMock.swift */; };
 		594743AE261E5B5000E88576 /* RestEndpointMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743AD261E5B5000E88576 /* RestEndpointMock.swift */; };
 		594743B3261E5C1D00E88576 /* AchievementsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743B2261E5C1D00E88576 /* AchievementsServiceMock.swift */; };
+		594743BB261E5C7D00E88576 /* NetworkRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743BA261E5C7D00E88576 /* NetworkRequesterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		594743A8261E5AE400E88576 /* ModelProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProviderMock.swift; sourceTree = "<group>"; };
 		594743AD261E5B5000E88576 /* RestEndpointMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestEndpointMock.swift; sourceTree = "<group>"; };
 		594743B2261E5C1D00E88576 /* AchievementsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsServiceMock.swift; sourceTree = "<group>"; };
+		594743BA261E5C7D00E88576 /* NetworkRequesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequesterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +163,9 @@
 		594742B7261BC2C500E88576 /* Stash_iOS_ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				5947439F261E5A6200E88576 /* Mocks */,
 				594742BA261BC2C500E88576 /* Info.plist */,
+				594743BA261E5C7D00E88576 /* NetworkRequesterTests.swift */,
+				5947439F261E5A6200E88576 /* Mocks */,
 			);
 			path = Stash_iOS_ChallengeTests;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				594743A9261E5AE400E88576 /* ModelProviderMock.swift in Sources */,
+				594743BB261E5C7D00E88576 /* NetworkRequesterTests.swift in Sources */,
 				594743AE261E5B5000E88576 /* RestEndpointMock.swift in Sources */,
 				594743A4261E5A7500E88576 /* HTTPProviderMock.swift in Sources */,
 				594743B3261E5C1D00E88576 /* AchievementsServiceMock.swift in Sources */,

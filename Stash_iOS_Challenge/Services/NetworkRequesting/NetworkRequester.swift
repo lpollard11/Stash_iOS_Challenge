@@ -7,6 +7,7 @@
 
 enum ResponseError: Error {
     case invalidData
+    case invalidPath
 }
 
 final class NetworkRequester: NetworkRequesting {

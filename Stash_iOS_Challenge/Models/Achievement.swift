@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Achievement: Decodable {
+struct Achievement: Decodable, Equatable {
     let id: Int
     let level: String
     let progress: Int

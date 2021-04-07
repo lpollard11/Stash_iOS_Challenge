@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Overview: Decodable {
+struct Overview: Decodable, Equatable {
     let title: String
 }

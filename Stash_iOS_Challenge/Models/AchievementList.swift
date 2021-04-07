@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AchievementList: Decodable {
+struct AchievementList: Decodable, Equatable {
     let success: Bool
     let status: Int
     let overview: Overview

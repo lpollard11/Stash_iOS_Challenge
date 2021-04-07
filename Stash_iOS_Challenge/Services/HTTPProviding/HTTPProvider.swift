@@ -7,14 +7,10 @@
 
 import Foundation
 
-enum TaskError: Error {
-    case invalidPath
-}
-
 final class HTTPProvider: HTTPProviding {
     func task(endpoint: RestEndpoint, completion: @escaping ((Data?, Error?) -> Void)) {
         guard let path = Bundle.main.path(forResource: endpoint.path, ofType: "json") else {
-            completion(nil, TaskError.invalidPath)
+            completion(nil, ResponseError.invalidPath)
             return
         }
         

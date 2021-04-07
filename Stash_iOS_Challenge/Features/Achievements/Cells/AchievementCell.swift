@@ -24,10 +24,13 @@ final class AchievementCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func configure(with imageURL: URL) {
+        achievementImageView.load(with: imageURL)
+    }
+    
     private func setupUI() {
         selectionStyle = .none
-        
-        containerView.backgroundColor = .blue
+
         containerView.layer.cornerRadius = 5
         containerView.clipsToBounds = true
         
@@ -38,6 +41,14 @@ final class AchievementCell: UITableViewCell {
             $0.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             $0.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16),
             $0.heightAnchor.constraint(equalToConstant: 200)
+        ]}
+        
+        containerView.addSubview(achievementImageView)
+        achievementImageView.addConstraints {[
+            $0.topAnchor.constraint(equalTo: containerView.topAnchor),
+            $0.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+            $0.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
+            $0.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
         ]}
     }
 }

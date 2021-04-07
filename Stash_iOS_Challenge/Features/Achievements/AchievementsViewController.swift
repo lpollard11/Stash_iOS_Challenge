@@ -55,6 +55,8 @@ extension AchievementsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: AchievementCell.identifier, for: indexPath) as! AchievementCell
+        let achievement = presenter.achievement(for: indexPath)
+        cell.configure(with: achievement.imageURL)
         return cell
     }
 }

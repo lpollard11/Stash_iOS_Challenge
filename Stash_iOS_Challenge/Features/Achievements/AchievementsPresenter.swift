@@ -23,8 +23,8 @@ final class AchievementsPresenter: AchievementsPresenterType {
         return interactor.error?.localizedDescription
     }
     
-    func achievementCellViewModel(for indexPath: IndexPath) {
-        
+    func achievement(for indexPath: IndexPath) -> Achievement {
+        return interactor.achievements[indexPath.row]
     }
     
     func viewDidLoad() {

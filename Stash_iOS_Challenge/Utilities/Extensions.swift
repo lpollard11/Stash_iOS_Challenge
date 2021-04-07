@@ -27,10 +27,7 @@ extension UIView {
 }
 
 extension UIImageView {
-    func load(with urlString: String?) {
-        guard let urlString = urlString, let url = URL(string: urlString) else {
-            return
-        }
+    func load(with url: URL) {
         DispatchQueue.global().async {
             if let data = try? Data(contentsOf: url) {
                 if let image = UIImage(data: data) {

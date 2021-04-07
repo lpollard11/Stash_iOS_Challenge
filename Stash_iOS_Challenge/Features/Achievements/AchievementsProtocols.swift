@@ -24,7 +24,7 @@ protocol AchievementsPresenterType {
     func viewDidLoad()
     var achievementsCount: Int { get }
     var errorMessage: String? { get }
-    func achievementCellViewModel(for indexPath: IndexPath)
+    func achievement(for indexPath: IndexPath) -> Achievement
 }
 
 protocol AchievementsViewType: class {

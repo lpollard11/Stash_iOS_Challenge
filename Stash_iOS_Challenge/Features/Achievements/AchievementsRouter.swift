@@ -24,6 +24,7 @@ final class AchievementsRouter {
         interactor.presenter = presenter
         let view = AchievementsViewController(presenter: presenter)
         presenter.view = view
-        return view
+        let nav = UINavigationController(rootViewController: view)
+        return nav
     }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		594742A2261BC2C400E88576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742A1261BC2C400E88576 /* AppDelegate.swift */; };
-		594742A9261BC2C400E88576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594742A7261BC2C400E88576 /* Main.storyboard */; };
 		594742AB261BC2C500E88576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594742AA261BC2C500E88576 /* Assets.xcassets */; };
 		594742AE261BC2C500E88576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594742AC261BC2C500E88576 /* LaunchScreen.storyboard */; };
 		594742B9261BC2C500E88576 /* Stash_iOS_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594742B8261BC2C500E88576 /* Stash_iOS_ChallengeTests.swift */; };
@@ -32,6 +31,8 @@
 		5947436A261BD7A400E88576 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474369261BD7A400E88576 /* AchievementsPresenter.swift */; };
 		5947436F261BF05300E88576 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947436E261BF05300E88576 /* AchievementsViewController.swift */; };
 		59474374261BF19D00E88576 /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474373261BF19D00E88576 /* AchievementsRouter.swift */; };
+		5947438B261E10D900E88576 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947438A261E10D900E88576 /* Extensions.swift */; };
+		59474391261E11FC00E88576 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474390261E11FC00E88576 /* AchievementCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +55,6 @@
 /* Begin PBXFileReference section */
 		5947429E261BC2C400E88576 /* Stash_iOS_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash_iOS_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		594742A1261BC2C400E88576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		594742A8261BC2C400E88576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		594742AA261BC2C500E88576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		594742AD261BC2C500E88576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		594742AF261BC2C500E88576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +83,8 @@
 		59474369261BD7A400E88576 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
 		5947436E261BF05300E88576 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		59474373261BF19D00E88576 /* AchievementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouter.swift; sourceTree = "<group>"; };
+		5947438A261E10D900E88576 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		59474390261E11FC00E88576 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,15 +135,15 @@
 		594742A0261BC2C400E88576 /* Stash_iOS_Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				5947435D261BCF8A00E88576 /* Features */,
 				594742AF261BC2C500E88576 /* Info.plist */,
 				594742A1261BC2C400E88576 /* AppDelegate.swift */,
 				594742AA261BC2C500E88576 /* Assets.xcassets */,
+				5947435D261BCF8A00E88576 /* Features */,
 				594742AC261BC2C500E88576 /* LaunchScreen.storyboard */,
-				594742A7261BC2C400E88576 /* Main.storyboard */,
 				594742E1261BC58100E88576 /* Models */,
 				594742DB261BC53700E88576 /* Resources */,
 				594742DA261BC52400E88576 /* Services */,
+				59474389261E10CE00E88576 /* Utilities */,
 			);
 			path = Stash_iOS_Challenge;
 			sourceTree = "<group>";
@@ -250,6 +252,7 @@
 		5947435E261BCFA400E88576 /* Achievements */ = {
 			isa = PBXGroup;
 			children = (
+				5947438F261E118500E88576 /* Cells */,
 				5947435F261BCFBF00E88576 /* AchievementsInteractor.swift */,
 				59474369261BD7A400E88576 /* AchievementsPresenter.swift */,
 				59474364261BD01400E88576 /* AchievementsProtocols.swift */,
@@ -257,6 +260,22 @@
 				5947436E261BF05300E88576 /* AchievementsViewController.swift */,
 			);
 			path = Achievements;
+			sourceTree = "<group>";
+		};
+		59474389261E10CE00E88576 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5947438A261E10D900E88576 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5947438F261E118500E88576 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				59474390261E11FC00E88576 /* AchievementCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,7 +384,6 @@
 				594742AE261BC2C500E88576 /* LaunchScreen.storyboard in Resources */,
 				594742DD261BC55500E88576 /* achievements.json in Resources */,
 				594742AB261BC2C500E88576 /* Assets.xcassets in Resources */,
-				594742A9261BC2C400E88576 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,8 +421,10 @@
 				59474365261BD01400E88576 /* AchievementsProtocols.swift in Sources */,
 				59474316261BC9F200E88576 /* HTTPProviding.swift in Sources */,
 				5947432A261BCA4300E88576 /* RestEndpoint.swift in Sources */,
+				59474391261E11FC00E88576 /* AchievementCell.swift in Sources */,
 				5947432F261BCA6700E88576 /* AchievementsEndpoint.swift in Sources */,
 				594742FB261BC82700E88576 /* AchievementList.swift in Sources */,
+				5947438B261E10D900E88576 /* Extensions.swift in Sources */,
 				594742A2261BC2C400E88576 /* AppDelegate.swift in Sources */,
 				594742E3261BC5B200E88576 /* Achievement.swift in Sources */,
 				59474340261BCBF100E88576 /* NetworkRequesting.swift in Sources */,
@@ -444,14 +464,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		594742A7261BC2C400E88576 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				594742A8261BC2C400E88576 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		594742AC261BC2C500E88576 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

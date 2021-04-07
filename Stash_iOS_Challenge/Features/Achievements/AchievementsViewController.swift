@@ -8,6 +8,7 @@
 import UIKit
 
 final class AchievementsViewController: UIViewController {
+    private let tableView = UITableView()
     private let presenter: AchievementsPresenterType
     
     init(presenter: AchievementsPresenterType) {
@@ -21,12 +22,46 @@ final class AchievementsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+        setupTableView()
         presenter.viewDidLoad()
+    }
+    
+    private func setupView() {
+        navigationItem.title = "Smart Investing"
+        view.backgroundColor = .white
+    }
+    
+    private func setupTableView() {
+        tableView.register(cell: AchievementCell.self)
+        tableView.tableFooterView = UIView()
+        tableView.dataSource = self
+        tableView.separatorStyle = .none
+        
+        view.addSubview(tableView)
+        tableView.addConstraints {[
+            $0.topAnchor.constraint(equalTo: view.topAnchor),
+            $0.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            $0.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            $0.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ]}
+    }
+}
+
+extension AchievementsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return presenter.achievementsCount
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: AchievementCell.identifier, for: indexPath) as! AchievementCell
+        return cell
     }
 }
 
 extension AchievementsViewController: AchievementsViewType {
     func reloadTable() {
+        tableView.reloadData()
     }
     
     func showError() {

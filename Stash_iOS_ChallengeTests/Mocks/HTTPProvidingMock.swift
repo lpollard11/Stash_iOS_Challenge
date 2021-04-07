@@ -8,7 +8,7 @@
 import Foundation
 @testable import Stash_iOS_Challenge
 
-class HTTPProviderMock: HTTPProviding {
+class HTTPProvidingMock: HTTPProviding {
     private let error: Error?
     private let data: Data?
     

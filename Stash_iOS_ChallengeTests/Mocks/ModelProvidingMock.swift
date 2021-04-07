@@ -8,7 +8,7 @@
 import Foundation
 @testable import Stash_iOS_Challenge
 
-class ModelProviderMock: ModelProviding {
+class ModelProvidingMock: ModelProviding {
     private let model: Any?
     
     init(model: Any?) {

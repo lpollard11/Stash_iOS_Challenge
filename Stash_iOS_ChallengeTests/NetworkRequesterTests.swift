@@ -10,8 +10,8 @@ import XCTest
 
 class NetworkRequesterTests: XCTestCase {
     func test_request_success() {
-        let httpProvider = HTTPProviderMock(error: nil, data: Data())
-        let modelProvider = ModelProviderMock(model: achievementList)
+        let httpProvider = HTTPProvidingMock(error: nil, data: Data())
+        let modelProvider = ModelProvidingMock(model: achievementList)
         let sut = NetworkRequester(modelProviding: modelProvider,
                                    httpProviding: httpProvider)
         
@@ -30,8 +30,8 @@ class NetworkRequesterTests: XCTestCase {
     }
     
     func test_request_failure_invalidPath() {
-        let httpProvider = HTTPProviderMock(error: ResponseError.invalidPath, data: Data())
-        let modelProvider = ModelProviderMock(model: achievementList)
+        let httpProvider = HTTPProvidingMock(error: ResponseError.invalidPath, data: Data())
+        let modelProvider = ModelProvidingMock(model: achievementList)
         let sut = NetworkRequester(modelProviding: modelProvider,
                                    httpProviding: httpProvider)
         
@@ -51,8 +51,8 @@ class NetworkRequesterTests: XCTestCase {
     }
     
     func test_request_failure_invalidData() {
-        let httpProvider = HTTPProviderMock(error: nil, data: Data())
-        let modelProvider = ModelProviderMock(model: nil)
+        let httpProvider = HTTPProvidingMock(error: nil, data: Data())
+        let modelProvider = ModelProvidingMock(model: nil)
         let sut = NetworkRequester(modelProviding: modelProvider,
                                    httpProviding: httpProvider)
         

@@ -34,11 +34,12 @@
 		59474391261E11FC00E88576 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474390261E11FC00E88576 /* AchievementCell.swift */; };
 		59474396261E541800E88576 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474395261E541800E88576 /* LevelView.swift */; };
 		5947439B261E543200E88576 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947439A261E543200E88576 /* ProgressBarView.swift */; };
-		594743A4261E5A7500E88576 /* HTTPProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743A3261E5A7500E88576 /* HTTPProviderMock.swift */; };
-		594743A9261E5AE400E88576 /* ModelProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743A8261E5AE400E88576 /* ModelProviderMock.swift */; };
+		594743A4261E5A7500E88576 /* HTTPProvidingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743A3261E5A7500E88576 /* HTTPProvidingMock.swift */; };
+		594743A9261E5AE400E88576 /* ModelProvidingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743A8261E5AE400E88576 /* ModelProvidingMock.swift */; };
 		594743AE261E5B5000E88576 /* RestEndpointMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743AD261E5B5000E88576 /* RestEndpointMock.swift */; };
 		594743B3261E5C1D00E88576 /* AchievementsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743B2261E5C1D00E88576 /* AchievementsServiceMock.swift */; };
 		594743BB261E5C7D00E88576 /* NetworkRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743BA261E5C7D00E88576 /* NetworkRequesterTests.swift */; };
+		594743C3261E621E00E88576 /* AchievementsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743C2261E621E00E88576 /* AchievementsInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,11 +93,12 @@
 		59474390261E11FC00E88576 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
 		59474395261E541800E88576 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
 		5947439A261E543200E88576 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
-		594743A3261E5A7500E88576 /* HTTPProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPProviderMock.swift; sourceTree = "<group>"; };
-		594743A8261E5AE400E88576 /* ModelProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProviderMock.swift; sourceTree = "<group>"; };
+		594743A3261E5A7500E88576 /* HTTPProvidingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPProvidingMock.swift; sourceTree = "<group>"; };
+		594743A8261E5AE400E88576 /* ModelProvidingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProvidingMock.swift; sourceTree = "<group>"; };
 		594743AD261E5B5000E88576 /* RestEndpointMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestEndpointMock.swift; sourceTree = "<group>"; };
 		594743B2261E5C1D00E88576 /* AchievementsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsServiceMock.swift; sourceTree = "<group>"; };
 		594743BA261E5C7D00E88576 /* NetworkRequesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequesterTests.swift; sourceTree = "<group>"; };
+		594743C2261E621E00E88576 /* AchievementsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				594742BA261BC2C500E88576 /* Info.plist */,
+				594743C2261E621E00E88576 /* AchievementsInteractorTests.swift */,
 				594743BA261E5C7D00E88576 /* NetworkRequesterTests.swift */,
 				5947439F261E5A6200E88576 /* Mocks */,
 			);
@@ -296,8 +299,8 @@
 		5947439F261E5A6200E88576 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				594743A3261E5A7500E88576 /* HTTPProviderMock.swift */,
-				594743A8261E5AE400E88576 /* ModelProviderMock.swift */,
+				594743A3261E5A7500E88576 /* HTTPProvidingMock.swift */,
+				594743A8261E5AE400E88576 /* ModelProvidingMock.swift */,
 				594743AD261E5B5000E88576 /* RestEndpointMock.swift */,
 				594743B2261E5C1D00E88576 /* AchievementsServiceMock.swift */,
 			);
@@ -465,10 +468,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				594743A9261E5AE400E88576 /* ModelProviderMock.swift in Sources */,
+				594743C3261E621E00E88576 /* AchievementsInteractorTests.swift in Sources */,
+				594743A9261E5AE400E88576 /* ModelProvidingMock.swift in Sources */,
 				594743BB261E5C7D00E88576 /* NetworkRequesterTests.swift in Sources */,
 				594743AE261E5B5000E88576 /* RestEndpointMock.swift in Sources */,
-				594743A4261E5A7500E88576 /* HTTPProviderMock.swift in Sources */,
+				594743A4261E5A7500E88576 /* HTTPProvidingMock.swift in Sources */,
 				594743B3261E5C1D00E88576 /* AchievementsServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

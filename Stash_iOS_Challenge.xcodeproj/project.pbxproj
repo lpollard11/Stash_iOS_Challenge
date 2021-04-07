@@ -33,6 +33,8 @@
 		59474374261BF19D00E88576 /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474373261BF19D00E88576 /* AchievementsRouter.swift */; };
 		5947438B261E10D900E88576 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947438A261E10D900E88576 /* Extensions.swift */; };
 		59474391261E11FC00E88576 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474390261E11FC00E88576 /* AchievementCell.swift */; };
+		59474396261E541800E88576 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59474395261E541800E88576 /* LevelView.swift */; };
+		5947439B261E543200E88576 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947439A261E543200E88576 /* ProgressBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		59474373261BF19D00E88576 /* AchievementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouter.swift; sourceTree = "<group>"; };
 		5947438A261E10D900E88576 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		59474390261E11FC00E88576 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
+		59474395261E541800E88576 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
+		5947439A261E543200E88576 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +278,8 @@
 			isa = PBXGroup;
 			children = (
 				59474390261E11FC00E88576 /* AchievementCell.swift */,
+				59474395261E541800E88576 /* LevelView.swift */,
+				5947439A261E543200E88576 /* ProgressBarView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -413,9 +419,11 @@
 				59474351261BCED300E88576 /* AchievementsService.swift in Sources */,
 				59474374261BF19D00E88576 /* AchievementsRouter.swift in Sources */,
 				59474356261BCF3000E88576 /* AchievementsServiceAPI.swift in Sources */,
+				59474396261E541800E88576 /* LevelView.swift in Sources */,
 				5947436A261BD7A400E88576 /* AchievementsPresenter.swift in Sources */,
 				59474308261BC99800E88576 /* ModelProviding.swift in Sources */,
 				59474334261BCA9200E88576 /* HTTPProvider.swift in Sources */,
+				5947439B261E543200E88576 /* ProgressBarView.swift in Sources */,
 				59474310261BC9A800E88576 /* ModelProvider.swift in Sources */,
 				59474360261BCFBF00E88576 /* AchievementsInteractor.swift in Sources */,
 				59474365261BD01400E88576 /* AchievementsProtocols.swift in Sources */,

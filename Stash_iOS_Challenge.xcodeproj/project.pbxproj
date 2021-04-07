@@ -40,6 +40,7 @@
 		594743B3261E5C1D00E88576 /* AchievementsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743B2261E5C1D00E88576 /* AchievementsServiceMock.swift */; };
 		594743BB261E5C7D00E88576 /* NetworkRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743BA261E5C7D00E88576 /* NetworkRequesterTests.swift */; };
 		594743C3261E621E00E88576 /* AchievementsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743C2261E621E00E88576 /* AchievementsInteractorTests.swift */; };
+		594743D1261E64ED00E88576 /* AchievementsOutputInteractorTypeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594743D0261E64ED00E88576 /* AchievementsOutputInteractorTypeMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		594743B2261E5C1D00E88576 /* AchievementsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsServiceMock.swift; sourceTree = "<group>"; };
 		594743BA261E5C7D00E88576 /* NetworkRequesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequesterTests.swift; sourceTree = "<group>"; };
 		594743C2261E621E00E88576 /* AchievementsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorTests.swift; sourceTree = "<group>"; };
+		594743D0261E64ED00E88576 /* AchievementsOutputInteractorTypeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsOutputInteractorTypeMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,10 +301,11 @@
 		5947439F261E5A6200E88576 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				594743D0261E64ED00E88576 /* AchievementsOutputInteractorTypeMock.swift */,
+				594743B2261E5C1D00E88576 /* AchievementsServiceMock.swift */,
 				594743A3261E5A7500E88576 /* HTTPProvidingMock.swift */,
 				594743A8261E5AE400E88576 /* ModelProvidingMock.swift */,
 				594743AD261E5B5000E88576 /* RestEndpointMock.swift */,
-				594743B2261E5C1D00E88576 /* AchievementsServiceMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				594743A9261E5AE400E88576 /* ModelProvidingMock.swift in Sources */,
 				594743BB261E5C7D00E88576 /* NetworkRequesterTests.swift in Sources */,
 				594743AE261E5B5000E88576 /* RestEndpointMock.swift in Sources */,
+				594743D1261E64ED00E88576 /* AchievementsOutputInteractorTypeMock.swift in Sources */,
 				594743A4261E5A7500E88576 /* HTTPProvidingMock.swift in Sources */,
 				594743B3261E5C1D00E88576 /* AchievementsServiceMock.swift in Sources */,
 			);

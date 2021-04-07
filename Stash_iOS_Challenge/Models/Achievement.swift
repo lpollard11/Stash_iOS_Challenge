@@ -24,6 +24,15 @@ struct Achievement: Decodable, Equatable {
         case accessible
     }
     
+    init(id: Int, level: String, progress: Int, total: Int, imageURL: URL, accessible: Bool) {
+        self.id = id
+        self.level = level
+        self.progress = progress
+        self.total = total
+        self.imageURL = imageURL
+        self.accessible = accessible
+    }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let id = try container.decode(Int.self, forKey: .id)

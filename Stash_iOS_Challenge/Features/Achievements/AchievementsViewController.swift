@@ -70,7 +70,11 @@ extension AchievementsViewController: AchievementsViewType {
     }
     
     func showError() {
-        
+        let alert = UIAlertController(title: "Oops!", message: presenter.errorMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Try again", style: .default, handler: { [weak self] _ in
+            self?.presenter.viewDidLoad()
+        }))
+        present(alert, animated: true, completion: nil)
     }
 }
  

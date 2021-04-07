@@ -8,11 +8,7 @@
 @testable import Stash_iOS_Challenge
 
 class AchievementsServiceMock: AchievementsService {
-    private let responseResult: ResponseResult<AchievementList>
-    
-    init(responseResult: ResponseResult<AchievementList>) {
-        self.responseResult = responseResult
-    }
+    var responseResult: ResponseResult<AchievementList> = .failure(ResponseError.invalidData)
     
     func achievements(completion: @escaping (ResponseResult<AchievementList>) -> Void) {
         completion(responseResult)
